@@ -19,15 +19,15 @@ A simple portfolio template for developer/designers built with React.
 Get the code
 
 <pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
- 
+
 Install required dependencies
 
-<pre>yarn install</pre>
+<pre>npm install</pre>
 
 
 Start the server
 
-<pre>yarn start</pre>
+<pre>npm start</pre>
 
 ### More
 

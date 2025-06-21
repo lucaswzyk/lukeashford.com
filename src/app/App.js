@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, useLocation } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import AppRoutes from "./routes";
 import Headermain from "../header";
 // import AnimatedCursor from "../hooks/AnimatedCursor";
@@ -8,7 +8,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       {/* <div className="cursor__dot">
         <AnimatedCursor
           innerSize={15}
