@@ -1,10 +1,6 @@
 ### Description
 
-A simple portfolio template for developer/designers built with React. 
-
-### [live preview](https://ubaimutl.github.io/react-portfolio/)
-
-[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
+A personal portfolio website built with React. 
 
 ### Features
 
@@ -16,23 +12,30 @@ A simple portfolio template for developer/designers built with React.
 
 ### Setup
 
-Get the code
-
-<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
-
 Install required dependencies
 
 <pre>npm install</pre>
-
 
 Start the server
 
 <pre>npm start</pre>
 
-### More
+### Deployment
 
-Modify pages content in  `src/content_option.js`.
+This site is configured to deploy to GitHub Pages using GitHub Actions. The deployment workflow is defined in `.github/workflows/deploy.yml`.
 
-### Thanks
+The site uses HashRouter for navigation, which is compatible with GitHub Pages. This ensures that all routes work correctly when deployed to GitHub Pages.
 
-If you like this portfolio template don't forget give it a ⭐ 
+### Content Management
+
+Modify pages content in `src/content_option.js`.
+
+### Development Notes
+
+- The site uses React Router with HashRouter for navigation
+- The deployment workflow builds the site and deploys it to the gh-pages branch
+- Custom domain configuration is handled by adding a CNAME file to the build directory
+
+### Credits
+
+This site was built using a React portfolio template. Thanks to the original creator for the foundation.

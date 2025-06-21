@@ -1,0 +1,45 @@
+# .github/workflows/pages.yml
+name: Build & deploy React app to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:         # minimum needed for Pages
+  contents: read
+  pages: write
+  id-token: write     # OIDC for secure deploy
+
+concurrency:         # cancel any in-flight deploy of the same ref
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+      - run: npm run build
+
+      # Custom domain?  Configure it once in the Pages UI.
+      # A CNAME file is ignored in custom workflows. :contentReference[oaicite:2]{index=2}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build         # directory to publish
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages       # required name
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
