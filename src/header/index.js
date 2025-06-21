@@ -1,8 +1,11 @@
 import React from "react";
 import "./style.css";
-import { logotext } from "../content_option";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
 const Headermain = () => {
+  const { t } = useTranslation();
+
   const handleLogoClick = () => {
     window.location.href = "/portfolio";
   };
@@ -15,8 +18,9 @@ const Headermain = () => {
           className="navbar-brand nav_ac"
           onClick={handleLogoClick}
         >
-          {logotext}
+          {t("logotext")}
         </a>
+        <LanguageSwitcher />
       </div>
     </header>
   );

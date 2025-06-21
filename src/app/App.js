@@ -5,6 +5,8 @@ import AppRoutes from "./routes";
 import Headermain from "../header";
 // import AnimatedCursor from "../hooks/AnimatedCursor";
 import "./App.css";
+// Import i18n configuration
+import "../i18n/i18n";
 
 export default function App() {
   return (

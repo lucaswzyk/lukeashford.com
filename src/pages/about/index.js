@@ -1,129 +1,134 @@
 import React from "react";
 import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  dataabout,
-  meta,
-  worktimeline,
-  skills,
-  languages,
-  other_interests,
-} from "../../content_option";
+import {HelmetProvider} from "react-helmet-async";
+import {Col, Container, Row} from "react-bootstrap";
+import {useTranslation} from "react-i18next";
 import StarRating from "../../components/starBar";
 
 export const About = () => {
+  const {t} = useTranslation();
+
   return (
-    <HelmetProvider>
-      <Container className="About-header">
-        <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="12">
-            <h1 className="display-4 mb-4">Über mich</h1>
-            <hr className="separator-line" />
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Informationen</h3>
-          </Col>
-          <Col lg="7">
-            <p>
-              Blond
-              <br />
-              Blaue Augen
-              <br />
-              1,96 m<br />
-              Muskulös
-              <br />
-              <br />
-              Geburtsjahr 1998
-              <br />
-              Nationalität: Deutsch
-              <br />
-              Spielalter: 24-36
-              <br />
-              Wohnort: Berlin
-              <br />
-              Führerschein: Klasse B
-            </p>
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">{dataabout.title}</h3>
-          </Col>
-          <Col lg="7" className="d-flex align-items-center">
-            <div>
-              <p>{dataabout.aboutme}</p>
-            </div>
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Letzte Projekte</h3>
-          </Col>
-          <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
+      <HelmetProvider>
+        <Container className="About-header">
+          <Row className="mb-5 mt-3 pt-md-3">
+            <Col lg="12">
+              <h1 className="display-4 mb-4">{t("navigation.about")}</h1>
+              <hr className="separator-line"/>
+            </Col>
+          </Row>
+          <Row className="sec_sp">
+            <Col lg="5">
+              <h3 className="color_sec py-4">
+                {t("about.sections.information")}
+              </h3>
+            </Col>
+            <Col lg="7">
+              <p>
+                {t("about.sections.personal_info.blonde")}
+                <br/>
+                {t("about.sections.personal_info.eyes")}
+                <br/>
+                1,96 m<br/>
+                {t("about.sections.personal_info.build")}
+                <br/>
+                <br/>
+                {t("about.sections.personal_info.birth")}
+                <br/>
+                {t("about.sections.personal_info.nationality")}
+                <br/>
+                {t("about.sections.personal_info.playing_age")}: {t("personalInfo.playing_age")}
+                <br/>
+                {t("about.sections.personal_info.location")}
+                <br/>
+                {t("about.sections.personal_info.license")}
+              </p>
+            </Col>
+          </Row>
+          <Row className="sec_sp">
+            <Col lg="5">
+              <h3 className="color_sec py-4">{t("about.title")}</h3>
+            </Col>
+            <Col lg="7" className="d-flex align-items-center">
+              <div>
+                <p>{t("about.aboutme")}</p>
+              </div>
+            </Col>
+          </Row>
+          <Row className="sec_sp">
+            <Col lg="5">
+              <h3 className="color_sec py-4">
+                {t("about.sections.recent_projects")}
+              </h3>
+            </Col>
+            <Col lg="7">
+              <table className="table caption-top">
+                <tbody>
+                {t('worktimeline', {returnObjects: true}).map((data, i) => {
                   return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
+                      <tr key={i}>
+                        <th scope="row">{data.jobtitle}</th>
+                        <td>{data.where}</td>
+                        <td>{data.date}</td>
+                      </tr>
                   );
                 })}
-              </tbody>
-            </table>
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Fähigkeiten</h3>
-          </Col>
-          <Col lg="7">
-            {skills.map((data, i) => (
-              <div key={i}>
-                <h3 className="progress-title">
-                  {data.name}
-                  <StarRating fullStars={data.value} />
-                </h3>
-              </div>
-            ))}
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Sprachen</h3>
-          </Col>
-          <Col lg="7">
-            {languages.map((data, i) => (
-              <div key={i}>
-                <h3 className="progress-title">
-                  {data.name}
-                  <StarRating fullStars={data.value} />
-                </h3>
-              </div>
-            ))}
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">Interessen</h3>
-          </Col>
-          <Col lg="7">
-            {other_interests.map((data, i) => {
-              return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p>{data.description}</p>
-                </div>
-              );
-            })}
-          </Col>
-        </Row>
-      </Container>
-    </HelmetProvider>
+                </tbody>
+              </table>
+            </Col>
+          </Row>
+          <Row className="sec_sp">
+            <Col lg="5">
+              <h3 className="color_sec py-4">
+                {t("about.sections.skills")}
+              </h3>
+            </Col>
+            <Col lg="7">
+              {t('skills', {returnObjects: true}).map((data, i) => (
+                  <div key={i}>
+                    <h3 className="progress-title">
+                      {data.name}
+                      <StarRating fullStars={data.value}/>
+                    </h3>
+                  </div>
+              ))}
+            </Col>
+          </Row>
+          <Row className="sec_sp">
+            <Col lg="5">
+              <h3 className="color_sec py-4">
+                {t("about.sections.languages")}
+              </h3>
+            </Col>
+            <Col lg="7">
+              {t('languages', {returnObjects: true}).map((data, i) => (
+                  <div key={i}>
+                    <h3 className="progress-title">
+                      {data.name}
+                      <StarRating fullStars={data.value}/>
+                    </h3>
+                  </div>
+              ))}
+            </Col>
+          </Row>
+          <Row className="sec_sp">
+            <Col lang="5">
+              <h3 className="color_sec py-4">
+                {t("about.sections.interests")}
+              </h3>
+            </Col>
+            <Col lg="7">
+              {t('other_interests', {returnObjects: true}).map((data, i) => {
+                return (
+                    <div className="service_ py-4" key={i}>
+                      <h5 className="service__title">{data.title}</h5>
+                      <p>{data.description}</p>
+                    </div>
+                );
+              })}
+            </Col>
+          </Row>
+        </Container>
+      </HelmetProvider>
   );
 };

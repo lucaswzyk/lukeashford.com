@@ -1,0 +1,53 @@
+// This file contains only non-text configuration options like image URLs, email service IDs, etc.
+
+// Personal information that should be the same across all languages
+const personalInfo = {
+  name: "Lucas Waclawczyk",
+  email: "info@lucaswac.com",
+  phone: "+49 1515 3272 456",
+  playing_age: "24-36"
+};
+
+const introdata = {
+  your_img_url: "https://i.postimg.cc/52zVLqt9/2-C3-A5215-2.jpg",
+};
+
+const pics_landscape = [
+  "https://i.postimg.cc/90z3MySh/2C3A5438.jpg",
+  "https://i.postimg.cc/7LbSK6pL/2-C3-A5155-2-2.jpg",
+  "https://i.postimg.cc/tTBQpBBk/2-C3-A5388-2.jpg",
+  "https://i.postimg.cc/j5x0pp4C/2-C3-A5367-2.jpg",
+  "https://i.postimg.cc/PqM0Q6nH/2-C3-A6053-2.jpg",
+  "https://i.postimg.cc/HWM9Grjc/2-C3-A5111-2.jpg",
+];
+
+const pics_portrait = [
+  "https://i.postimg.cc/qRsqwHMR/2-C3-A5187-2.jpg",
+  "https://i.postimg.cc/0Nv1k0QF/2-C3-A5726-2-2.jpg",
+  "https://i.postimg.cc/qvJsCQwy/2-C3-A5121-2.jpg",
+  "https://i.postimg.cc/KYrhsGLd/2-C3-A5363-2.jpg",
+  "https://i.postimg.cc/Hs40xFwT/2-C3-A5068-2.jpg",
+  "https://i.postimg.cc/SKppr2X6/2C3A5322.jpg",
+  "https://i.postimg.cc/WzdKjTFp/2C3A6143.jpg",
+  "https://i.postimg.cc/3xmsd8Ld/2-C3-A5829-2.jpg",
+  "https://i.postimg.cc/T1nVn4Bq/2-C3-A5099-2.jpg",
+];
+
+const contactConfig = {
+  YOUR_SERVICE_ID: "service_411p4de",
+  YOUR_TEMPLATE_ID: "template_hv9i2jq",
+  YOUR_USER_ID: "6H-Q0Ma6rAJK2dame",
+};
+
+const socialprofiles = {
+  insta: "https://instagram.com/lucaswzyk",
+};
+
+export {
+  personalInfo,
+  introdata,
+  pics_portrait,
+  pics_landscape,
+  contactConfig,
+  socialprofiles,
+};

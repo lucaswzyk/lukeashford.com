@@ -1,0 +1,156 @@
+{
+  "logotext": "HOME",
+  "meta": {
+    "title": "Lucas Waclawczyk",
+    "description": "I am Lucas Waclawczyk - Actor, Singer, Editor, Director, Producer, currently based in Berlin"
+  },
+  "intro": {
+    "title": "Lucas Waclawczyk",
+    "animated": {
+      "first": "combines technology and art.",
+      "second": "is a passionate musician.",
+      "third": "develops stories and shows."
+    },
+    "description": "Actor, Singer, Director, Producer, Editor, currently based in Berlin"
+  },
+  "about": {
+    "title": "The Where and Why of My Journey",
+    "aboutme": "I've been a performer since I was a child. Initially, I focused on music, particularly singing. In a boarding school with a vocal focus, I received training in classical and musical theater singing, piano, conducting, music history, and theory. My passion for acting began during a student exchange year in Florida, USA. Although I didn't attend a film or theater school, I've continuously taken private lessons and learned through practical experiences in various projects.\n\nBesides my love for art, I've always been passionate about technology, especially software. This interest led me to degrees in computer science and mathematics, which give me the freedom to choose my artistic projects based on genuine passion. Working as a software developer allows me to explore innovative and experimental projects, most recently in the field of artificial intelligence.\n\nThree years ago, I moved to Berlin to pursue filmmaking. Since then, I've been involved in several arthouse projects and have realized my own ideas. Now I'm looking for representation by an acting agency to take my career to the next level.",
+    "sections": {
+      "information": "Information",
+      "personal_info": {
+        "blonde": "Blonde",
+        "eyes": "Blue eyes",
+        "build": "Muscular",
+        "birth": "Born in 1998",
+        "nationality": "Nationality: German",
+        "playing_age": "Playing age",
+        "location": "Location: Berlin",
+        "license": "Driver's license: Class B"
+      },
+      "recent_projects": "Recent Projects",
+      "skills": "Skills",
+      "languages": "Languages",
+      "interests": "Interests"
+    }
+  },
+  "worktimeline": [
+    {
+      "jobtitle": "Creator, Director, Showmaster",
+      "where": "lean_art (Artist Collective)",
+      "date": "2022 - present"
+    },
+    {
+      "jobtitle": "Parasite",
+      "where": "Masquerade (Musical)",
+      "date": "2023 - 2024"
+    },
+    {
+      "jobtitle": "Franck, the Conference Speaker",
+      "where": "Bloody Maries (Musical)",
+      "date": "2023"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Singing",
+      "value": 5
+    },
+    {
+      "name": "Fitness",
+      "value": 5
+    },
+    {
+      "name": "Piano",
+      "value": 4
+    },
+    {
+      "name": "Dancing",
+      "value": 3
+    },
+    {
+      "name": "Guitar",
+      "value": 3
+    },
+    {
+      "name": "Kickboxing",
+      "value": 2
+    }
+  ],
+  "languages": [
+    {
+      "name": "German",
+      "value": 5
+    },
+    {
+      "name": "American English",
+      "value": 5
+    },
+    {
+      "name": "British English",
+      "value": 4
+    },
+    {
+      "name": "Italian",
+      "value": 2
+    },
+    {
+      "name": "French",
+      "value": 2
+    }
+  ],
+  "other_interests": [
+    {
+      "title": "Technology and Mathematics",
+      "description": "This has been my other passion since I was a child, and I've made it my profession. It also gives me a unique perspective on the technical aspects of projects and the evolution of the industry.\n\nTo anticipate the question: Trek, not Wars."
+    },
+    {
+      "title": "Sports and Bodybuilding",
+      "description": "My daily routine includes fixed routines to stay healthy and in shape. You'll find me at the gym at least four times a week, and I frequently go running or cycling. Dancing and stretching keep me flexible."
+    },
+    {
+      "title": "Philosophy and Lifestyle",
+      "description": "What is good? What is right? What should be and are there things that should be? How should we meet each other? How can I become my best self? The goal: to be better than I am."
+    },
+    {
+      "title": "Production, Direction, and Editing",
+      "description": "As much as I love being on stage and in front of the camera, I've realized that I'm pretty good at bringing my own ideas to life. So far, these have mostly been experiments, but I'm currently refining two promising ideas for commercial use."
+    },
+    {
+      "title": "Travel",
+      "description": "My day job allows me to travel a lot in Germany, and I often go abroad privately. At least once a year, I go on a bike tour with friends. We live out of the pannier, meet new people, and see breathtaking landscapes. So far, we've been to 14 countries."
+    }
+  ],
+  "contact": {
+    "email": "info@lucaswac.com",
+    "phone": "+49 1515 3272 456",
+    "description": "",
+    "greeting": "I look forward to hearing from you.",
+    "mobile": "Mobile",
+    "form": {
+      "name": "Name",
+      "message": "Message",
+      "sending": "Sending...",
+      "send": "Send",
+      "success": "SUCCESS! Thank you for your message",
+      "error": "Failed to send!"
+    }
+  },
+  "navigation": {
+    "home": "HOME",
+    "gallery": "Gallery",
+    "about": "About Me",
+    "contact": "Contact"
+  },
+  "language_switcher": {
+    "language": "Language",
+    "en": "English",
+    "de": "German"
+  },
+  "social": {
+    "follow_me": "Follow Me"
+  },
+  "gallery": {
+    "photographer": "Photos: Birgitta Weizenegger"
+  }
+}
