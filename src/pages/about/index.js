@@ -84,14 +84,16 @@ export const About = () => {
               </h3>
             </Col>
             <Col lg="7">
-              {t('skills', {returnObjects: true}).map((data, i) => (
-                  <div key={i}>
-                    <h3 className="progress-title">
-                      {data.name}
-                      <StarRating fullStars={data.value}/>
-                    </h3>
-                  </div>
-              ))}
+              <Row>
+                {t('skills', {returnObjects: true}).map((data, i) => (
+                    <Col xs={12} sm={6} md={4} key={i} className="mb-3">
+                      <h3 className="progress-title">
+                        {data.name}
+                        <StarRating fullStars={data.value}/>
+                      </h3>
+                    </Col>
+                ))}
+              </Row>
             </Col>
           </Row>
           <Row className="sec_sp">
@@ -101,14 +103,16 @@ export const About = () => {
               </h3>
             </Col>
             <Col lg="7">
-              {t('languages', {returnObjects: true}).map((data, i) => (
-                  <div key={i}>
-                    <h3 className="progress-title">
-                      {data.name}
-                      <StarRating fullStars={data.value}/>
-                    </h3>
-                  </div>
-              ))}
+              <Row>
+                {t('languages', {returnObjects: true}).map((data, i) => (
+                    <Col xs={12} sm={6} md={4} key={i} className="mb-3">
+                      <h3 className="progress-title">
+                        {data.name}
+                        <StarRating fullStars={data.value}/>
+                      </h3>
+                    </Col>
+                ))}
+              </Row>
             </Col>
           </Row>
           <Row className="sec_sp">
