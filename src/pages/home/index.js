@@ -7,6 +7,7 @@ import {introdata, personalInfo} from "../../config_option"; // Import for the i
 import {Gallery} from "../gallery";
 import {About} from "../about";
 import {ContactUs} from "../contact";
+import Button from "../../components/Button";
 
 export const Home = () => {
   const {t} = useTranslation();
@@ -56,44 +57,32 @@ export const Home = () => {
                         e.preventDefault();
                         document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});
                       }}>
-                        <div id="button_gallery" className="ac_btn btn button_h">
+                        <Button id="button_gallery">
                           {t("navigation.gallery")}
-                          <div className="ring one"></div>
-                          <div className="ring two"></div>
-                          <div className="ring three"></div>
-                        </div>
+                        </Button>
                       </a>
                       <a href="/#about" onClick={(e) => {
                         e.preventDefault();
                         document.getElementById('about').scrollIntoView({behavior: 'smooth'});
                       }}>
-                        <div id="button_about" className="ac_btn btn button_h">
+                        <Button id="button_about">
                           {t("navigation.about")}
-                          <div className="ring one"></div>
-                          <div className="ring two"></div>
-                          <div className="ring three"></div>
-                        </div>
+                        </Button>
                       </a>
                       <a href="/#contact" onClick={(e) => {
                         e.preventDefault();
                         document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
                       }}>
-                        <div id="button_contact" className="ac_btn btn button_h">
+                        <Button id="button_contact">
                           {t("navigation.contact")}
-                          <div className="ring one"></div>
-                          <div className="ring two"></div>
-                          <div className="ring three"></div>
-                        </div>
+                        </Button>
                       </a>
                     </div>
                     <div className="intro_btn-action pb-5 mt-3">
                       <a href={personalInfo.resume_url} target="_blank" rel="noopener noreferrer">
-                        <div id="button_resume" className="ac_btn btn button_h">
+                        <Button id="button_resume">
                           {t("download_resume")}
-                          <div className="ring one"></div>
-                          <div className="ring two"></div>
-                          <div className="ring three"></div>
-                        </div>
+                        </Button>
                       </a>
                     </div>
                   </div>

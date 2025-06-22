@@ -6,6 +6,7 @@ import {Alert, Col, Container, Row} from "react-bootstrap";
 import {contactConfig, personalInfo} from "../../config_option"; // Import for the contact
                                                                  // configuration and personal info
 import {useTranslation} from "react-i18next";
+import Button from "../../components/Button";
 
 export const ContactUs = () => {
   const {t} = useTranslation();
@@ -105,12 +106,10 @@ export const ContactUs = () => {
                 </p>
                 <br/>
                 <p>
-                  <a href={personalInfo.resume_url} target="_blank" rel="noopener noreferrer"
-                     className="btn ac_btn">
-                    {t("download_resume")}
-                    <div className="ring one"></div>
-                    <div className="ring two"></div>
-                    <div className="ring three"></div>
+                  <a href={personalInfo.resume_url} target="_blank" rel="noopener noreferrer">
+                    <Button>
+                      {t("download_resume")}
+                    </Button>
                   </a>
                 </p>
               </address>
@@ -156,12 +155,12 @@ export const ContactUs = () => {
                 ></textarea>
                 <br/>
                 <Row>
-                  <Col lg="12" className="form-group">
-                    <button className="btn ac_btn" type="submit">
+                  <Col lg="12" className="form-group text-center">
+                    <Button type="submit">
                       {formData.loading
                           ? t("contact.form.sending")
                           : t("contact.form.send")}
-                    </button>
+                    </Button>
                   </Col>
                 </Row>
               </form>
