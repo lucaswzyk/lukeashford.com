@@ -59,14 +59,14 @@
 }
 
 .t_border {
-  border-color: red;
+  border-color: var(--primary-color);
 }
 
 .progress-title {
   font-size: 16px;
   font-weight: 700;
   margin: 15px 0 20px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
 }
 
 .progress {
@@ -98,13 +98,19 @@
 
 @-webkit-keyframes animate-positive {
   0% {
-    width: 0%;
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
 
 @keyframes animate-positive {
   0% {
-    width: 0%;
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
 
@@ -121,17 +127,13 @@
   padding-bottom: 4px;
 }
 
-/*! CSS Used keyframes */
-
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
 }
@@ -139,12 +141,10 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
 }

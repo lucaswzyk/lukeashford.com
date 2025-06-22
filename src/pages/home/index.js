@@ -28,6 +28,8 @@ export const Home = () => {
                     backgroundImage: `url(${introdata.your_img_url})`,
                     backgroundPosition: "70% 30%",
                   }}
+                  aria-label={t("intro.profile_image_alt")}
+                  role="img"
               ></div>
               <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
                 <div className="align-self-center">
@@ -50,24 +52,33 @@ export const Home = () => {
                     </h1>
                     <p className="mb-1x">{t("intro.description")}</p>
                     <div className="intro_btn-action">
-                      <a href="#gallery">
-                        <div id="button_h" className="ac_btn btn">
+                      <a href="/#gallery" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});
+                      }}>
+                        <div id="button_gallery" className="ac_btn btn button_h">
                           {t("navigation.gallery")}
                           <div className="ring one"></div>
                           <div className="ring two"></div>
                           <div className="ring three"></div>
                         </div>
                       </a>
-                      <a href="#about">
-                        <div id="button_h" className="ac_btn btn">
+                      <a href="/#about" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('about').scrollIntoView({behavior: 'smooth'});
+                      }}>
+                        <div id="button_about" className="ac_btn btn button_h">
                           {t("navigation.about")}
                           <div className="ring one"></div>
                           <div className="ring two"></div>
                           <div className="ring three"></div>
                         </div>
                       </a>
-                      <a href="#contact">
-                        <div id="button_h" className="ac_btn btn">
+                      <a href="/#contact" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+                      }}>
+                        <div id="button_contact" className="ac_btn btn button_h">
                           {t("navigation.contact")}
                           <div className="ring one"></div>
                           <div className="ring two"></div>
@@ -77,7 +88,7 @@ export const Home = () => {
                     </div>
                     <div className="intro_btn-action pb-5 mt-3">
                       <a href={personalInfo.resume_url} target="_blank" rel="noopener noreferrer">
-                        <div id="button_h" className="ac_btn btn">
+                        <div id="button_resume" className="ac_btn btn button_h">
                           {t("download_resume")}
                           <div className="ring one"></div>
                           <div className="ring two"></div>
