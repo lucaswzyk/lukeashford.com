@@ -62,7 +62,7 @@ export const Gallery = () => {
                 <Col xs={12} sm={6} md={4} key={i}>
                   <Card
                       className="po_item"
-                      onClick={() => handleImageClick(i + pics_landscape.length)}
+                      onClick={() => handleImageClick(i)}
                   >
                     <CardMedia
                         component="img"
@@ -84,7 +84,8 @@ export const Gallery = () => {
           <Row className="mb-5 po_items_ho">
             {pics_landscape.map((url, i) => (
                 <Col xs={12} md={6} key={i}>
-                  <Card className="po_item" onClick={() => handleImageClick(i)}>
+                  <Card className="po_item"
+                        onClick={() => handleImageClick(i + pics_portrait.length)}>
                     <CardMedia
                         component="img"
                         image={url}
@@ -113,21 +114,33 @@ export const Gallery = () => {
                   useKeyboardArrows={true}
                   centerMode={false}
                   dynamicHeight={true}
+                  showArrows={true}
+                  swipeable={true}
                   style={{height: "100%", width: "100%"}}
               >
                 {/* Render all images in carousel */}
                 {pics_portrait.map((url, i) => (
-                    <div key={i}>
-                      <img
-                          src={url}
-                          alt=""
-                          style={{
-                            maxHeight: "100vh",
-                            width: "100%",
-                            objectFit: "contain",
-                          }}
-                          className="carousel_image"
-                      />
+                    <div
+                        key={i}
+                        className="portrait-container"
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          width: "100%"
+                        }}
+                    >
+                      <div style={{width: "70%", maxWidth: "800px"}}>
+                        <img
+                            src={url}
+                            alt=""
+                            style={{
+                              maxHeight: "100vh",
+                              width: "100%",
+                              objectFit: "contain",
+                            }}
+                            className="carousel_image"
+                        />
+                      </div>
                     </div>
                 ))}
                 {pics_landscape.map((url, i) => (
