@@ -6,6 +6,56 @@
 .table th {
   color: var(--text-color);
   border-color: var(--text-color);
+  padding: 0.5rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-bordered {
+  border: 1px solid var(--text-color);
+}
+
+/* Custom table header styling */
+.table-header {
+  background-color: transparent; /* Transparent background */
+}
+
+.table-header th {
+  color: var(--text-color); /* Same color as other text */
+  font-weight: 700; /* Bold font to distinguish headers */
+}
+
+.table thead th {
+  font-weight: 600;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.table tbody td {
+  vertical-align: middle;
+}
+
+/* Project tables styling */
+.mb-5 h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .table td,
+  .table th {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+
+  .mb-5 h4 {
+    font-size: 1.25rem;
+  }
 }
 
 .t_border {
@@ -21,7 +71,7 @@
 
 .progress {
   height: 5px;
-  background: var(--secondary);
+  background: var(--secondary-color);
   border-radius: 0;
   box-shadow: none;
   margin-bottom: 30px;

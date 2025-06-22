@@ -62,19 +62,36 @@ export const About = () => {
               </h3>
             </Col>
             <Col lg="7">
-              <table className="table caption-top">
-                <tbody>
-                {t('worktimeline', {returnObjects: true}).map((data, i) => {
-                  return (
-                      <tr key={i}>
-                        <th scope="row">{data.jobtitle}</th>
-                        <td>{data.where}</td>
-                        <td>{data.date}</td>
-                      </tr>
-                  );
-                })}
-                </tbody>
-              </table>
+              {Object.keys(t('project_categories', {returnObjects: true}))
+              .map((category, index) => (
+                  <div key={index} className="mb-5">
+                    <h4 className="mb-3">{t(`project_categories.${category}`)}</h4>
+                    <div className="table-responsive">
+                      <table className="table table-bordered">
+                        <thead>
+                        <tr className="table-header">
+                          <th>{t('project_headers.year')}</th>
+                          <th>{t('project_headers.title')}</th>
+                          <th>{t('project_headers.role')}</th>
+                          <th>{t('project_headers.director')}</th>
+                          <th>{t('project_headers.location')}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {t(`projects.${category}`, {returnObjects: true}).map((project, i) => (
+                            <tr key={i}>
+                              <td>{project.year}</td>
+                              <td><em>{project.title}</em></td>
+                              <td>{project.role}</td>
+                              <td>{project.director}</td>
+                              <td>{project.location}</td>
+                            </tr>
+                        ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+              ))}
             </Col>
           </Row>
           <Row className="sec_sp">

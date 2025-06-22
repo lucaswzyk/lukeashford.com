@@ -1,11 +1,6 @@
 {
   "logotext": "HOME",
-  "meta": {
-    "title": "Lucas Waclawczyk",
-    "description": "I am Lucas Waclawczyk - Actor, Singer, Editor, Director, Producer, currently based in Berlin"
-  },
   "intro": {
-    "title": "Lucas Waclawczyk",
     "animated": {
       "first": "combines technology and art.",
       "second": "is a passionate musician.",
@@ -33,6 +28,159 @@
       "languages": "Languages",
       "interests": "Interests"
     }
+  },
+  "projects": {
+    "film_screen": [
+      {
+        "year": "2025",
+        "title": "Self-Fulfilling Prophecy",
+        "role": "Director / Producer",
+        "director": "Luke Ashford / Keegan Hakim",
+        "location": "New York"
+      },
+      {
+        "year": "2025",
+        "title": "Die Haustierfrage",
+        "role": "Emil Anders (Lead)",
+        "director": "Nico Haupt",
+        "location": "Dresden"
+      },
+      {
+        "year": "2025",
+        "title": "Invisibilis",
+        "role": "Teacher",
+        "director": "Felicitas Wolter",
+        "location": "Potsdam"
+      },
+      {
+        "year": "2025",
+        "title": "Was du Döner nennst",
+        "role": "Dancer, 1 AD",
+        "director": "Teresa Hebald",
+        "location": "Düsseldorf"
+      },
+      {
+        "year": "2025",
+        "title": "Alles, was du willst",
+        "role": "Lighting Assistant",
+        "director": "Lewis von Alberti",
+        "location": "Berlin"
+      },
+      {
+        "year": "2024",
+        "title": "Schwere Taschen",
+        "role": "Felix",
+        "director": "David Siroy / Noa Catalfo",
+        "location": "Düsseldorf / Köln"
+      },
+      {
+        "year": "2024",
+        "title": "The Last Fall",
+        "role": "Flatmate (Lead)",
+        "director": "Arezu Khanicheh / Samin Moussavi",
+        "location": "Berlin"
+      },
+      {
+        "year": "2024",
+        "title": "Why - Music Video",
+        "role": "Director / Producer",
+        "director": "Luke Ashford / lean_art",
+        "location": "Berlin"
+      },
+      {
+        "year": "2022",
+        "title": "Tell Me How I Should Be",
+        "role": "Director / Producer",
+        "director": "Felix Hertneck / Luke Ashford",
+        "location": "Potsdam"
+      },
+      {
+        "year": "2021",
+        "title": "Musik",
+        "role": "2nd AD",
+        "director": "Angela Schanelec / faktura film",
+        "location": "Berlin"
+      },
+      {
+        "year": "2021",
+        "title": "Everybody Wants to Be Loved",
+        "role": "Singer at Garden Party",
+        "director": "Katharina Woll / Zeitgeist",
+        "location": "Berlin"
+      }
+    ],
+    "theatre": [
+      {
+        "year": "2024",
+        "title": "Maskerade",
+        "role": "The Parasite",
+        "director": "Dominika Szymanska / Matthias Busch",
+        "location": "Berlin"
+      },
+      {
+        "year": "2023",
+        "title": "Bloody Mary's",
+        "role": "Franck",
+        "director": "Tamina Ciskowski / Peter Eichstädt",
+        "location": "Potsdam"
+      },
+      {
+        "year": "2022",
+        "title": "Große Dramen, Kleine Dramen",
+        "role": "Benji",
+        "director": "Tamina Ciskowski / Peter Eichstädt",
+        "location": "Potsdam"
+      },
+      {
+        "year": "2022",
+        "title": "TraumHAFT",
+        "role": "Bruce, the Cook",
+        "director": "Tamina Ciskowski / Peter Eichstädt",
+        "location": "Potsdam"
+      },
+      {
+        "year": "2024",
+        "title": "Gute Nachrichten",
+        "role": "Finn-Martin Block (Lead)",
+        "director": "Tom Knoll / Svenja Knoll",
+        "location": "Potsdam"
+      }
+    ],
+    "live_event": [
+      {
+        "year": "2025",
+        "title": "Musical Dinner Shows",
+        "role": "Host / Singer",
+        "director": "Uwe Morscheck / Unforgettable Shows",
+        "location": "Germany-wide"
+      },
+      {
+        "year": "2025",
+        "title": "Udo Jürgens Dinner Shows",
+        "role": "Host / Singer",
+        "director": "Uwe Morscheck / Unforgettable Shows",
+        "location": "Germany-wide"
+      },
+      {
+        "year": "2023",
+        "title": "Silvestergala 2023",
+        "role": "Showmaster / Director / Producer",
+        "director": "Luke Ashford / lean_art",
+        "location": "Potsdam"
+      }
+    ]
+  },
+  "project_categories": {
+    "film_screen": "Film / Screen",
+    "theatre": "Theatre",
+    "live_event": "Live / Event Shows"
+  },
+  "project_headers": {
+    "year": "Year",
+    "title": "Title",
+    "role": "Role",
+    "director": "Director / Company",
+    "location": "Location"
   },
   "worktimeline": [
     {
@@ -122,8 +270,6 @@
     }
   ],
   "contact": {
-    "email": "info@lucaswac.com",
-    "phone": "+49 1515 3272 456",
     "description": "",
     "greeting": "I look forward to hearing from you.",
     "mobile": "Mobile",

@@ -2,10 +2,10 @@
 
 // Personal information that should be the same across all languages
 const personalInfo = {
-  name: "Lucas Waclawczyk",
-  email: "info@lucaswac.com",
+  name: "Luke Ashford",
+  email: "luke@lukeashford.com",
   phone: "+49 1515 3272 456",
-  playing_age: "24-36"
+  playing_age: "23-40"
 };
 
 const introdata = {
