@@ -9,17 +9,8 @@ const personalInfo = {
 };
 
 const introdata = {
-  your_img_url: "https://i.postimg.cc/52zVLqt9/2-C3-A5215-2.jpg",
+  your_img_url: "https://i.postimg.cc/qvJsCQwy/2-C3-A5121-2.jpg",
 };
-
-const pics_landscape = [
-  "https://i.postimg.cc/90z3MySh/2C3A5438.jpg",
-  "https://i.postimg.cc/7LbSK6pL/2-C3-A5155-2-2.jpg",
-  "https://i.postimg.cc/tTBQpBBk/2-C3-A5388-2.jpg",
-  "https://i.postimg.cc/j5x0pp4C/2-C3-A5367-2.jpg",
-  "https://i.postimg.cc/PqM0Q6nH/2-C3-A6053-2.jpg",
-  "https://i.postimg.cc/HWM9Grjc/2-C3-A5111-2.jpg",
-];
 
 const pics_portrait = [
   "https://i.postimg.cc/qRsqwHMR/2-C3-A5187-2.jpg",
@@ -31,6 +22,15 @@ const pics_portrait = [
   "https://i.postimg.cc/WzdKjTFp/2C3A6143.jpg",
   "https://i.postimg.cc/3xmsd8Ld/2-C3-A5829-2.jpg",
   "https://i.postimg.cc/T1nVn4Bq/2-C3-A5099-2.jpg",
+];
+
+const pics_landscape = [
+  "https://i.postimg.cc/90z3MySh/2C3A5438.jpg",
+  "https://i.postimg.cc/7LbSK6pL/2-C3-A5155-2-2.jpg",
+  "https://i.postimg.cc/tTBQpBBk/2-C3-A5388-2.jpg",
+  "https://i.postimg.cc/j5x0pp4C/2-C3-A5367-2.jpg",
+  "https://i.postimg.cc/PqM0Q6nH/2-C3-A6053-2.jpg",
+  "https://i.postimg.cc/52zVLqt9/2-C3-A5215-2.jpg"
 ];
 
 const contactConfig = {
