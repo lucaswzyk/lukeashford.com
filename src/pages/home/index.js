@@ -3,7 +3,7 @@ import "./style.css";
 import {Helmet, HelmetProvider} from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import {useTranslation} from "react-i18next";
-import {introdata} from "../../config_option"; // Import for the image URL
+import {introdata, personalInfo} from "../../config_option"; // Import for the image URL and resume
 import {Gallery} from "../gallery";
 import {About} from "../about";
 import {ContactUs} from "../contact";
@@ -49,9 +49,9 @@ export const Home = () => {
                       />
                     </h1>
                     <p className="mb-1x">{t("intro.description")}</p>
-                    <div className="intro_btn-action pb-5">
-                      <a href="#gallery" className="text_2">
-                        <div id="button_p" className="ac_btn btn">
+                    <div className="intro_btn-action">
+                      <a href="#gallery">
+                        <div id="button_h" className="ac_btn btn">
                           {t("navigation.gallery")}
                           <div className="ring one"></div>
                           <div className="ring two"></div>
@@ -69,6 +69,16 @@ export const Home = () => {
                       <a href="#contact">
                         <div id="button_h" className="ac_btn btn">
                           {t("navigation.contact")}
+                          <div className="ring one"></div>
+                          <div className="ring two"></div>
+                          <div className="ring three"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <div className="intro_btn-action pb-5 mt-3">
+                      <a href={personalInfo.resume_url} target="_blank" rel="noopener noreferrer">
+                        <div id="button_h" className="ac_btn btn">
+                          {t("download_resume")}
                           <div className="ring one"></div>
                           <div className="ring two"></div>
                           <div className="ring three"></div>

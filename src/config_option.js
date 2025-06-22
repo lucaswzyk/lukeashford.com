@@ -5,7 +5,8 @@ const personalInfo = {
   name: "Luke Ashford",
   email: "luke@lukeashford.com",
   phone: "+49 1515 3272 456",
-  playing_age: "23-40"
+  playing_age: "23-40",
+  resume_url: "https://d26oc3sg82pgk3.cloudfront.net/files/media/uploads/casting_call/31b7659c-8c2d-4594-85c4-876fa7f5fcb6.pdf"
 };
 
 const introdata = {

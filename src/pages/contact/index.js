@@ -3,7 +3,8 @@ import * as emailjs from "emailjs-com";
 import "./style.css";
 import {HelmetProvider} from "react-helmet-async";
 import {Alert, Col, Container, Row} from "react-bootstrap";
-import {contactConfig} from "../../config_option"; // Import for the contact configuration
+import {contactConfig, personalInfo} from "../../config_option"; // Import for the contact
+                                                                 // configuration and personal info
 import {useTranslation} from "react-i18next";
 
 export const ContactUs = () => {
@@ -99,13 +100,19 @@ export const ContactUs = () => {
                 </a>
                 <br/>
                 <br/>
-                {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-                    <p>
-                      <strong>{t("contact.mobile")}:</strong> {t("personalInfo.phone")}
-                    </p>
-                ) : (
-                    ""
-                )}
+                <p>
+                  <strong>{t("contact.mobile")}:</strong> {personalInfo.phone}
+                </p>
+                <br/>
+                <p>
+                  <a href={personalInfo.resume_url} target="_blank" rel="noopener noreferrer"
+                     className="btn ac_btn">
+                    {t("download_resume")}
+                    <div className="ring one"></div>
+                    <div className="ring two"></div>
+                    <div className="ring three"></div>
+                  </a>
+                </p>
               </address>
               <p>{t("contact.description")}</p>
             </Col>
