@@ -44,6 +44,15 @@ const socialprofiles = {
   insta: "https://instagram.com/lucaswzyk",
 };
 
+// Layout configuration for responsive design
+const layoutConfig = {
+  about: {
+    fullWidthColWidth: "12",
+    headerColWidth: "3",
+    contentColWidth: "9"
+  }
+};
+
 export {
   personalInfo,
   introdata,
@@ -51,4 +60,5 @@ export {
   pics_landscape,
   contactConfig,
   socialprofiles,
+  layoutConfig,
 };

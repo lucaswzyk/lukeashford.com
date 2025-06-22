@@ -4,6 +4,7 @@ import {HelmetProvider} from "react-helmet-async";
 import {Col, Container, Row} from "react-bootstrap";
 import {useTranslation} from "react-i18next";
 import StarRating from "../../components/starBar";
+import {layoutConfig} from "../../config_option";
 
 export const About = () => {
   const {t} = useTranslation();
@@ -12,18 +13,18 @@ export const About = () => {
       <HelmetProvider>
         <Container className="About-header">
           <Row className="mb-5 mt-3 pt-md-3">
-            <Col lg="12">
+            <Col lg={layoutConfig.about.fullWidthColWidth}>
               <h1 className="display-4 mb-4">{t("navigation.about")}</h1>
               <hr className="separator-line"/>
             </Col>
           </Row>
           <Row className="sec_sp">
-            <Col lg="5">
+            <Col lg={layoutConfig.about.headerColWidth}>
               <h3 className="color_sec py-4">
                 {t("about.sections.information")}
               </h3>
             </Col>
-            <Col lg="7">
+            <Col lg={layoutConfig.about.contentColWidth}>
               <p>
                 {t("about.sections.personal_info.blonde")}
                 <br/>
@@ -46,22 +47,22 @@ export const About = () => {
             </Col>
           </Row>
           <Row className="sec_sp">
-            <Col lg="5">
+            <Col lg={layoutConfig.about.headerColWidth}>
               <h3 className="color_sec py-4">{t("about.title")}</h3>
             </Col>
-            <Col lg="7" className="d-flex align-items-center">
+            <Col lg={layoutConfig.about.contentColWidth} className="d-flex align-items-center">
               <div>
                 <p>{t("about.aboutme")}</p>
               </div>
             </Col>
           </Row>
           <Row className="sec_sp">
-            <Col lg="5">
+            <Col lg={layoutConfig.about.headerColWidth}>
               <h3 className="color_sec py-4">
                 {t("about.sections.recent_projects")}
               </h3>
             </Col>
-            <Col lg="7">
+            <Col lg={layoutConfig.about.contentColWidth}>
               {Object.keys(t('project_categories', {returnObjects: true}))
               .map((category, index) => (
                   <div key={index} className="mb-5">
@@ -95,12 +96,12 @@ export const About = () => {
             </Col>
           </Row>
           <Row className="sec_sp">
-            <Col lg="5">
+            <Col lg={layoutConfig.about.headerColWidth}>
               <h3 className="color_sec py-4">
                 {t("about.sections.skills")}
               </h3>
             </Col>
-            <Col lg="7">
+            <Col lg={layoutConfig.about.contentColWidth}>
               <Row>
                 {t('skills', {returnObjects: true}).map((data, i) => (
                     <Col xs={12} sm={6} md={4} key={i} className="mb-3">
@@ -114,12 +115,12 @@ export const About = () => {
             </Col>
           </Row>
           <Row className="sec_sp">
-            <Col lg="5">
+            <Col lg={layoutConfig.about.headerColWidth}>
               <h3 className="color_sec py-4">
                 {t("about.sections.languages")}
               </h3>
             </Col>
-            <Col lg="7">
+            <Col lg={layoutConfig.about.contentColWidth}>
               <Row>
                 {t('languages', {returnObjects: true}).map((data, i) => (
                     <Col xs={12} sm={6} md={4} key={i} className="mb-3">
@@ -133,12 +134,12 @@ export const About = () => {
             </Col>
           </Row>
           <Row className="sec_sp">
-            <Col lang="5">
+            <Col lg={layoutConfig.about.headerColWidth}>
               <h3 className="color_sec py-4">
                 {t("about.sections.interests")}
               </h3>
             </Col>
-            <Col lg="7">
+            <Col lg={layoutConfig.about.contentColWidth}>
               {t('other_interests', {returnObjects: true}).map((data, i) => {
                 return (
                     <div className="service_ py-4" key={i}>
