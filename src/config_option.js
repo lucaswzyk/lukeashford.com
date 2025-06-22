@@ -35,7 +35,7 @@ const pics_landscape = [
 ];
 
 const contactConfig = {
-  YOUR_SERVICE_ID: "service_411p4de",
+  YOUR_SERVICE_ID: "service_qupx2vr",
   YOUR_TEMPLATE_ID: "template_hv9i2jq",
   YOUR_USER_ID: "6H-Q0Ma6rAJK2dame",
 };
